@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>工单系统 &mdash; ferry-doc v0.0.1 文档</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> ferry-doc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">工单系统</a><ul>
+<li><a class="reference internal" href="#id2">概述-工单系统的作用</a></li>
+<li><a class="reference internal" href="#id3">功能结构-工单系统的构成</a></li>
+<li><a class="reference internal" href="#id4">现有的工单系统</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ferry-doc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>工单系统</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/docs/工单系统.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>工单系统<a class="headerlink" href="#id1" title="永久链接至标题"></a></h1>
+<section id="id2">
+<h2>概述-工单系统的作用<a class="headerlink" href="#id2" title="永久链接至标题"></a></h2>
+<p>工单系统Ticket system又称为工单管理系统（还可以称为问题工单系统，事务工单系统，事务追踪系统issue tracking system，支持工单系统support ticket system)）,它是一种网络软件系统，根据不同组织，部门和外部客户的需求，来有针对的管理，维护和追踪一系列的问题和请求。一个完善功能的工单系统又可以称为帮助台系统。</p>
+<p><img alt="20211108105509" src="https://raw.githubusercontent.com/lich-Img/blogImg/master/img/20211108105509.png" /></p>
+<p>通过上图我们发现，当发现问题和解决问题不是同一人的时候，这里面就会涉及到信息传递的效率问题。</p>
+<p>如果你是发现问题的人，可以试着问自己以下几个问题：</p>
+<ul class="simple">
+<li><p>我应该如何描述我的问题？</p></li>
+<li><p>我的问题应该找谁处理？</p></li>
+<li><p>我希望这个问题尽快解决吗？</p></li>
+</ul>
+<p>如果你是解决问题的人，可以试着问自己以下几个问题：</p>
+<ul class="simple">
+<li><p>这个问题的描述清晰吗？</p></li>
+<li><p>如果不清晰我该如何让这个问题变得清晰？</p></li>
+<li><p>我应该在什么时间前解决这个问题？</p></li>
+<li><p>这个问题我解决不了怎么办？</p></li>
+<li><p>现在有100个问题要解决，我应该先解决哪个？</p></li>
+<li><p>等等。</p></li>
+</ul>
+<p>可以看到，发现问题和解答问题之间有一个巨大的信息鸿沟需要解决。而解决的办法就是工单系统。</p>
+</section>
+<section id="id3">
+<h2>功能结构-工单系统的构成<a class="headerlink" href="#id3" title="永久链接至标题"></a></h2>
+<p><img alt="ferry_doc" src="https://raw.githubusercontent.com/lich-Img/blogImg/master/img/ferry_doc.png" /></p>
+</section>
+<section id="id4">
+<h2>现有的工单系统<a class="headerlink" href="#id4" title="永久链接至标题"></a></h2>
+<ol class="simple">
+<li><p>网易七鱼
+<img alt="20211111163304" src="https://raw.githubusercontent.com/lich-Img/blogImg/master/img/20211111163304.png" /><br /><img alt="20211111163340" src="https://raw.githubusercontent.com/lich-Img/blogImg/master/img/20211111163340.png" /><br /><img alt="20211111163436" src="https://raw.githubusercontent.com/lich-Img/blogImg/master/img/20211111163436.png" /></p></li>
+</ol>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="永久链接至标题"></a></h2>
+<p><a class="reference external" href="https://baike.baidu.com/item/%E5%B7%A5%E5%8D%95%E7%B3%BB%E7%BB%9F/6609171">百度百科-工单系统</a><br /><a class="reference external" href="http://www.woshipm.com/pd/3843111.html">如何设计出一款灵活的工单系统？</a><br /><a class="reference external" href="http://www.woshipm.com/pd/4240733.html">工单管理系统设计——架构篇</a><br /><a class="reference external" href="https://qiyukf.com/product/worksheet">网易七鱼</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2021, CodeHanHan.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
