@@ -33,7 +33,10 @@ release = 'v0.0.1'
 extensions = [
     'sphinx_rtd_theme',
     'recommonmark',
-    'sphinx_markdown_tables'
+    'sphinx_markdown_tables',
+    "sphinx.ext.viewcode",
+    "sphinx.ext.graphviz",
+    "sphinx.ext.githubpages",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
