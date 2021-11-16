@@ -1,13 +1,13 @@
-name: "Pull Request Docs Check"
-on: 
-- pull_request
-- push
+name: CI
+
+on: [push]
+
 
 jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@master
+    - uses: ammaraskar/sphinx-action@0.4
       with:
         docs-folder: "docs/"
