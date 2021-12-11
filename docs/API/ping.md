@@ -59,7 +59,7 @@ curl -X 'GET' \
   -H 'accept: application/json'
 ```
 
-请求url
+请求url:
 ```
 http://localhost:10000/api/v1/ping/list?offset=1&limit=10
 ```
