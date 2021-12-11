@@ -1,4 +1,4 @@
-sphinx-rtd-theme
+sphinx-press-theme
 recommonmark > 0.4.0
 commonmarkextensions >= 0.0.5
 commonmark >= 0.8.1
