@@ -16,9 +16,15 @@
 
 响应参数  
 
-| 编号 | 名称  | 类型   | 描述             |
-| ---- | ----- | ------ | ---------------- |
-| 1    | reply | string | 服务器返回的消息 |
+| 编号 | 名称       | 类型      | 描述           |
+| ---- | ---------- | --------- | -------------- |
+| 1    | code       | int       | 状态码         |
+| 2    | message    | string    | 响应信息       |
+| 3    | detail     | object    | 响应详情       |
+| 3.1  | PingID     | string    | ping记录值id   |
+| 3.2  | Message    | string    | ping记录值信息 |
+| 3.3  | Reply      | string    | ping记录值返回 |
+| 3.4  | CreateTime | timestamp | 时间戳         |
 
 请求示例：
 ```sh
@@ -34,8 +40,17 @@ http://localhost:10000/api/v1/ping/create?message=hello
 ```
 
 响应示例：
-```
-hello, too
+```json
+{
+  "code": 200,
+  "detail": {
+    "PingID": "b44a3087ca644838bc56ae9317f2f99c",
+    "Message": "hello",
+    "Reply": "hello, too",
+    "CreateTime": null
+  },
+  "message": "success"
+}
 ```    
 
 ## 2. 查询ping记录
@@ -68,22 +83,34 @@ http://localhost:10000/api/v1/ping/list?offset=1&limit=10
 
 | 编号 | 名称       | 类型      | 描述             |
 | ---- | ---------- | --------- | ---------------- |
-| 1    | records    | object    | ping_record列表  |
-| 1.1  | pingID     | string    | ping消息ID       |
-| 1.2  | Message    | string    | 服务器收到的消息 |
-| 1.3  | Reply      | string    | 服务器返回的消息 |
-| 1.4  | CreateTime | timestamp | 创建时间         |
+| 1    | code       | int       | 状态码           |
+| 2    | message    | string    | 状态码           |
+| 3    | records    | object    | ping_record列表  |
+| 3.1  | pingID     | string    | ping消息ID       |
+| 3.2  | Message    | string    | 服务器收到的消息 |
+| 3.3  | Reply      | string    | 服务器返回的消息 |
+| 3.4  | CreateTime | timestamp | 创建时间         |
 
 
 响应示例：
 ```json
-[
-  {
-    "PingID": "bfb9994db194403ba2cc34ad2d716f9e",
-    "Message": "hello",
-    "Reply": "hello, too",
-    "CreateTime": "2021-12-11T04:36:46Z"
-  }
-]
+{
+  "code": 200,
+  "detail": [
+    {
+      "PingID": "167c17cb9111447ba558dbe14f91f3e0",
+      "Message": "aa",
+      "Reply": "aa, too",
+      "CreateTime": "2021-12-11T08:44:59Z"
+    },
+    {
+      "PingID": "19af1f61d49045f5a37b9921269b86c4",
+      "Message": "22",
+      "Reply": "22, too",
+      "CreateTime": "2021-12-11T11:30:18Z"
+    },
+  ],
+  "message": "success"
+}
 ```
 
